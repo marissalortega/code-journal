@@ -1,0 +1,22 @@
+header {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2.33rem;
+}
+
+img {
+  width: 100%;
+}
+
+.full {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+.save {
+  text-align: right;
+}
