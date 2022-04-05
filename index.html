@@ -13,6 +13,12 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Proza+Libre:wght@400;600&display=swap"
+    rel="stylesheet">
+
 </head>
 <body>
   <header>
@@ -20,32 +26,39 @@
   </header>
   <main>
     <div data-view="entry-form" class="container">
-      <h2 class="column-full">New Entry</h2>
       <form>
+        <h2 class="column-full">New Entry</h2>
         <div class="row">
           <div class="column-half">
             <img src="images/placeholder-image-square.jpg" alt="placeholder image">
           </div>
           <div class="column-half">
-            <div>
-              <label for="title">
-                <div>Title</div>
-                <input class="full type=" text" name="title">
-              </label>
+            <div class="title">
+              <label for="title">Title</label>
+              <input
+                required
+                class="full"
+                type="text"
+                name="title"
+                id="title">
             </div>
-            <div>
-              <label for="photo-url">
-                <div>Photo URL</div>
-                <input class="full" type="url" name="photo-url">
-              </label>
+            <div class="photo-url">
+              <label for="photo-url">Photo URL</label>
+              <input
+                required
+                class="full"
+                type="url"
+                name="photo-url"
+                id="photo-url">
             </div>
           </div>
         </div>
-        <div class="row column-full">
-          <label for="notes" class="full">
-            <div>Notes</div>
-            <textarea name="notes"></textarea>
-          </label>
+        <div class="row column-full notes">
+          <label for="user-notes">Notes</label>
+          <textarea
+            required
+            name="notes"
+            id="user-notes"></textarea>
         </div>
         <div class="column-full save">
           <input type="submit" name="submit" value="SAVE">
