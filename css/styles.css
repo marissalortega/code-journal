@@ -1,0 +1,97 @@
+body {
+  background-color: rgb(240 240 240);
+}
+
+header {
+  color: white;
+  background-color: #562b81;
+}
+
+h1 {
+  max-width: 575px;
+  margin: 0 auto;
+  padding: 16px 1.5rem;
+  font-family: "Proza Libre", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    max-width: 900px;
+  }
+}
+
+h2 {
+  font-family: "Proza Libre", sans-serif;
+  font-size: 32px;
+}
+
+img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.full {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 160px;
+  resize: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  border: 1px solid #b6b6b6;
+  margin-top: 12px;
+}
+
+input {
+  border: 1px solid #b6b6b6;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  height: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 12px;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #562b81;
+  outline: none;
+}
+
+.save {
+  text-align: right;
+}
+
+form > div {
+  font-family: "Proza Libre", sans-serif;
+}
+
+input[type="submit"] {
+  background-color: #562b81;
+  color: white;
+  border: none;
+  height: 32px;
+  padding: 0 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.title {
+  padding-bottom: 24px;
+}
+
+label {
+  font-weight: 600;
+}
+
+.column-half {
+  margin-bottom: 24px;
+}
+}
