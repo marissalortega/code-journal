@@ -26,7 +26,7 @@
   </header>
   <main>
     <div data-view="entry-form" class="container">
-      <form>
+      <form id="journal-entry-form">
         <h2 class="column-full">New Entry</h2>
         <div class="row">
           <div class="column-half image-container">
@@ -46,9 +46,9 @@
               <label for="photo-url">Photo URL</label>
               <input
                 required
-                class="full photo-url"
+                class="full"
                 type="url"
-                name="photo-url"
+                name="photourl"
                 id="photo-url">
             </div>
           </div>
@@ -56,12 +56,11 @@
         <div class="row column-full notes">
           <label for="user-notes">Notes</label>
           <textarea
-            required
-            name="notes"
+            name="usernotes"
             id="user-notes"></textarea>
         </div>
         <div class="column-full save">
-          <input type="submit" name="submit" value="SAVE">
+          <input class="submit" type="submit" name="submit" value="SAVE">
         </div>
       </form>
     </div>
