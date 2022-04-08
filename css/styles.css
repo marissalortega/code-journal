@@ -5,21 +5,50 @@ body {
 header {
   color: white;
   background-color: #562b81;
+  height: 64px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 575px;
 }
 
 h1 {
   max-width: 575px;
-  margin: 0 auto;
-  padding: 16px 1.5rem;
   font-family: "Proza Libre", sans-serif;
   font-size: 20px;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
-  h1 {
+  .nav-bar {
     max-width: 900px;
   }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-bar-ul {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar-ul > li {
+  display: inline;
+  font-family: "Proza Libre", sans-serif;
+  margin: 0;
+  padding: 0 0 0 24px;
 }
 
 h2 {
@@ -30,6 +59,11 @@ h2 {
 img {
   width: 100%;
   border-radius: 4px;
+  background-color: white;
+}
+
+.image-container {
+  margin-bottom: 24px;
 }
 
 .full {
@@ -73,6 +107,10 @@ form > div {
   font-family: "Proza Libre", sans-serif;
 }
 
+.photo-url {
+  margin-bottom: 24px;
+}
+
 input[type="submit"] {
   background-color: #562b81;
   color: white;
@@ -91,18 +129,20 @@ label {
   font-weight: 600;
 }
 
-.column-half {
-  margin-bottom: 24px;
-}
-
-ul {
+.journal-entries-ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-li {
-  margin-bottom: 32px;
+.journal-entries-ul > li {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  li {
+    margin-bottom: 24px;
+  }
 }
 
 h3 {
