@@ -20,6 +20,8 @@ journalEntryForm.addEventListener('submit', function (event) {
   data.entries.unshift(journalEntry);
   $image.setAttribute('src', 'images/placeholder-image-square.jpg');
   document.getElementById('journal-entry-form').reset();
+
+  showView('entries');
 });
 
 function renderEntries(entry) {
@@ -59,3 +61,17 @@ document.addEventListener('DOMContentLoaded', function (e) {
     $journalEntriesUl.appendChild(newEntry);
   }
 });
+
+function showView(string) {
+  var $views = document.querySelectorAll('.view');
+  for (var i = 0; i < $views.length; i++) {
+    var viewsAttr = $views[i].getAttribute('data-view');
+    if (viewsAttr === string) {
+      $views[i].className = 'view container';
+    } else {
+      $views[i].className = 'view hidden container';
+    }
+  }
+}
+
+window.onload = showView('entry-form');
