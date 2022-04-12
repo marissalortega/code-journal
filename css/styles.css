@@ -59,13 +59,41 @@ h2 {
 }
 
 img {
-  width: 100%;
+  width: 327px;
+  height: 327px;
   border-radius: 4px;
   background-color: white;
+  object-position: center;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
 }
 
 .image-container {
   margin-bottom: 24px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .image-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-container {
+    width: 100%;
+  }
 }
 
 .full {
