@@ -24,6 +24,7 @@ h1 {
   font-weight: 400;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -120,6 +121,7 @@ input[type="submit"] {
   padding: 0 16px;
   margin-top: 24px;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .title {
@@ -186,6 +188,7 @@ button {
   border: none;
   height: 32px;
   padding: 0 12px;
+  cursor: pointer;
 }
 
 .hidden {

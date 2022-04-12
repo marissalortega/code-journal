@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
   for (var i = 0; i < data.entries.length; i++) {
     var newEntry = renderEntries(data.entries[i]);
     $journalEntriesUl.appendChild(newEntry);
+    showView(data.view);
   }
 });
 
@@ -66,12 +67,12 @@ function showView(string) {
   var $views = document.querySelectorAll('.view');
   for (var i = 0; i < $views.length; i++) {
     var viewsAttr = $views[i].getAttribute('data-view');
+
     if (viewsAttr === string) {
       $views[i].className = 'view container';
+      data.view = string;
     } else {
       $views[i].className = 'view hidden container';
     }
   }
 }
-
-window.onload = showView('entry-form');
