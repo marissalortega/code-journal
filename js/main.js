@@ -64,15 +64,25 @@ document.addEventListener('DOMContentLoaded', function (e) {
 });
 
 function showView(string) {
+  data.view = string;
   var $views = document.querySelectorAll('.view');
   for (var i = 0; i < $views.length; i++) {
     var viewsAttr = $views[i].getAttribute('data-view');
 
     if (viewsAttr === string) {
       $views[i].className = 'view container';
-      data.view = string;
     } else {
       $views[i].className = 'view hidden container';
     }
   }
 }
+
+var $entriesButton = document.querySelector('.nav-bar-li');
+$entriesButton.addEventListener('click', function (e) {
+  showView('entries');
+});
+
+var $newButton = document.querySelector('.new-button');
+$newButton.addEventListener('click', function (e) {
+  showView('entry-form');
+});
