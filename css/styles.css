@@ -5,21 +5,52 @@ body {
 header {
   color: white;
   background-color: #562b81;
+  height: 64px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 575px;
 }
 
 h1 {
   max-width: 575px;
-  margin: 0 auto;
-  padding: 16px 1.5rem;
   font-family: "Proza Libre", sans-serif;
   font-size: 20px;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
-  h1 {
+  .nav-bar {
     max-width: 900px;
   }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-bar-ul {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar-ul > li {
+  display: inline;
+  font-family: "Proza Libre", sans-serif;
+  margin: 0;
+  padding: 0 0 0 24px;
+  cursor: pointer;
 }
 
 h2 {
@@ -28,8 +59,41 @@ h2 {
 }
 
 img {
-  width: 100%;
+  width: 327px;
+  height: 327px;
   border-radius: 4px;
+  background-color: white;
+  object-position: center;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+}
+
+.image-container {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .image-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-container {
+    width: 100%;
+  }
 }
 
 .full {
@@ -73,6 +137,10 @@ form > div {
   font-family: "Proza Libre", sans-serif;
 }
 
+.photo-url {
+  margin-bottom: 24px;
+}
+
 input[type="submit"] {
   background-color: #562b81;
   color: white;
@@ -81,6 +149,7 @@ input[type="submit"] {
   padding: 0 16px;
   margin-top: 24px;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .title {
@@ -91,7 +160,65 @@ label {
   font-weight: 600;
 }
 
-.column-half {
-  margin-bottom: 24px;
+.journal-entries-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
+
+.journal-entries-ul > li {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  li {
+    margin-bottom: 24px;
+  }
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: "Proza Libre", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+
+.h2-row {
+  display: flex;
+}
+
+.h2-left {
+  width: 50%;
+}
+
+.h2-right {
+  width: 50%;
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+button {
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: #562b81;
+  color: white;
+  border: none;
+  height: 32px;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }

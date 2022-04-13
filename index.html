@@ -22,10 +22,15 @@
 </head>
 <body>
   <header>
-    <h1>Code Journal</h1>
+    <div class="nav-bar">
+      <h1>Code Journal</h1>
+      <ul class="nav-bar-ul">
+        <li class="nav-bar-li"><a href="#">Entries</a></li>
+      </ul>
+    </div>
   </header>
   <main>
-    <div class="container" data-view="entry-form">
+    <div data-view="entry-form" class="view container">
       <form id="journal-entry-form">
         <h2 class="column-full">New Entry</h2>
         <div class="row">
@@ -64,6 +69,15 @@
           <input class="submit" type="submit" name="submit" value="SAVE">
         </div>
       </form>
+    </div>
+    <div data-view="entries" class="view hidden container">
+      <div class="column-full h2-row">
+        <h2 class="h2-left">Entries</h2>
+        <div class="h2-right">
+          <button class="new-button">NEW</button>
+        </div>
+      </div>
+      <ul class="journal-entries-ul"></ul>
     </div>
   </main>
   <script src="js/data.js"></script>
